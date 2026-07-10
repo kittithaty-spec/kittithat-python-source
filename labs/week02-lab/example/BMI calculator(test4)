@@ -1,0 +1,12 @@
+print("4. BMI Calculator:")
+print("   - Ask for weight (kg) and height (m)")
+print("   - Calculate: BMI = weight / (height ** 2)")
+#input
+weight = float(input("enter weight(kg); "))
+height = float(input("enter height(m); "))
+#process
+BMI = weight / (height ** 2)
+if BMI > 35:
+    print("Super very Ultra obsessed")
+#output
+print(f"Your BMI ={BMI} ")
