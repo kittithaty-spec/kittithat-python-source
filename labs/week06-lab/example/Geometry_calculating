@@ -1,0 +1,11 @@
+
+def calculate_triangle_area(Hight, Base):
+    """Calculates and displays rectangle area"""
+    area = 1/2 * Hight * Base
+    print(f"triangle with length {Hight} and width {Base}")
+    print(f"Area = 1/2 * {Hight} × {Base} = {area}")
+    print()
+
+print("Calculating tangle areas:")
+calculate_triangle_area(5, 3)
+calculate_triangle_area(10, 7)

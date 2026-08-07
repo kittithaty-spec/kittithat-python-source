@@ -7,7 +7,7 @@ return ข้อความต้อนรับในรูปแบบ string
 """
 def welcome_message(name, course):
     # Your Problem 1 solution
-    pass
+    return f"Welcome {name} to {course} class!"
 
 """ เขียน function ชื่อ calculate_circle ที่มีคุณสมบัติดังนี้:
 
@@ -18,7 +18,13 @@ return dictionary ที่มี area และ circumference
 
 def calculate_circle(radius):
     # Your Problem 2 solution
-    pass
+    pi = 3.14159
+    area = round(pi * radius * radius, 2)
+    circumference = round(2 * pi * radius, 2)
+    return {
+        "area": area,
+        "circumference": circumference,
+    }
 
 """ เขียน function ชื่อ create_user_profile ที่มีคุณสมบัติดังนี้:
 
@@ -26,11 +32,24 @@ def calculate_circle(radius):
 return string ที่จัดรูปแบบข้อมูลผู้ใช้
 รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
 
+อย่าลืมเขียนโปรแกรมในส่วนของการทดลองใช้งานด้วย เอา 3 ลูกค้า
+print(create_user_profile("Boonchoo", 40))
+print(create_user_profile("manee"))
+print(create_user_profile("Piti", 40, true))
 """
 
 def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
-    pass
+    
+    user_type = "standard"
+    if premium == True:
+        user_type = "premium"
+    return f"{username} (age: {age}) - {user_type}"
+
+print(create_user_profile("Boonchoo", 40))
+print(create_user_profile("manee"))
+print(create_user_profile("Piti", 40, True))
+
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
@@ -45,7 +64,18 @@ passed: จำนวนคะแนนที่ >= 70 """
 
 def analyze_scores(scores):
     # Your Problem 4 solution
-    pass
+    total = sum(scores)
+    average = round(total / len(scores), 1) if scores else 0
+    highest = max(scores) if scores else None
+    lowest = min(scores) if scores else None
+    passed = sum(1 for score in scores if score >= 70)
+    return {
+        "total": total,
+        "average": average,
+        "highest": highest,
+        "lowest": lowest,
+        "passed": passed,
+    }
 
 """ เขียน function ชื่อ count_vowels_consonants ที่มีคุณสมบัติดังนี้:
 
@@ -56,7 +86,19 @@ return dictionary ที่มี vowels และ consonants counts
 
 def count_vowels_consonants(text):
     # Your Problem 5 solution
-    pass
+    vowels_set = set("aeiou")
+    vowels = 0
+    consonants = 0
+    for char in text.lower():
+        if char.isalpha():
+            if char in vowels_set:
+                vowels += 1
+            else:
+                consonants += 1
+    return {
+        "vowels": vowels,
+        "consonants": consonants,
+    }
 
 # =============================================================================
 # TEST SECTION - DO NOT MODIFY
