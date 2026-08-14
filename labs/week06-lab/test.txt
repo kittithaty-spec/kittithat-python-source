@@ -1,0 +1,65 @@
+#part2
+Ex1
+After run
+
+Calling greet_person with different names:
+Hello, Alice! Nice to meet you.
+Hello, Bob! Nice to meet you.
+Hello, Charlie! Nice to meet you.
+
+Ex2
+After run
+
+Calling introduce_person:
+Hi! My name is Diana.
+I am 25 years old.
+I live in New York.
+
+Hi! My name is Eve.
+I am 30 years old.
+I live in Los Angeles.
+
+
+Ex3
+After run
+
+Calculating rectangle areas:
+Rectangle with length 5 and width 3
+Area = 5 × 3 = 15
+
+Rectangle with length 10 and width 7
+Araa = 10 × 7 = 70
+
+#Part3
+Ex1
+After run
+
+Using functions that return values:
+5 + 3 = 8
+10 + 7 = 17
+Sum of both results: 25
+
+Ex2
+After run
+
+Circle calculation:
+Circle with radius 5:
+Area 78.5:
+Circumference: 31.4:
+
+#part4
+Ex1
+After run
+
+Using default parameters:
+Hello, Smith!
+Hello, Dr. Johnson!
+Hello, Pprof. Beown!
+
+Ex2
+After run
+
+Multiple default parameters:
+Profile: Alice
+Profile: Bob, Age: 25
+Profile: Charlie, Age: 30, Country: Usa
