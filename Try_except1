@@ -1,0 +1,29 @@
+try:
+    num1 = float(input("ตัวเลข1: ")) 
+    num2 = float(input("ตัวเลข2: "))
+    op = input("เครื่องหมาย (/, *, +, -): ")
+
+    result = 0
+    if op == "/":
+        result = num1 / num2
+    elif op == "*":
+        result = num1 * num2
+    elif op == "+":
+        result = num1 + num2
+    elif op == "-":
+        result = num1 - num2
+    else:
+        raise ValueError("เครื่องหมายต้องเป็น (/, *, +, -) เท่านั้น")
+        
+    print(f"{num1} {op} {num2} = {result}")
+
+except ValueError: #ผู้ใช้ไม่ผิมพ์ตัวเลข
+    print("ตัวเลขผิดไม่ก็ไม่ใช่ตัวเลข")
+except ZeroDivisionError: #กรณีหารเป็น 0
+    print("ไม่สามารถหารด้วย 0")
+except Exception:
+    print("มีบางอย่างไม่ถูกต้อง")
+else: #ทำงานก็ต่อเมื่อไม่มี Exception
+    print("คำนวณข้อมูลเรียบร้อยแล้ว")
+finally: #ทำงานเสอมต่อให้มีหรือไม่มี Exception เกิดก็ตาม
+    print("จบการทำงาน")
