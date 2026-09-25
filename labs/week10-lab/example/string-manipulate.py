@@ -116,6 +116,7 @@ print(f"{count} letters 'l' found in '{text}'")
 # ===========================
 
 print("\n=== MEMBERSHIP TEST ===")
+print('Kittithat', 'Like', 'Python')
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
 
@@ -174,7 +175,9 @@ print("\n=== STRING FORMATTING ===")
 name = "ashish"
 age = 8
 print("Using %% formatting:")
+
 print("name=%s and age=%d" % (name, age))
+
 print("name=%s and age=%d" % ("ankita", 6))
 
 # .format() method
@@ -185,6 +188,8 @@ sal = 20000
 
 # Different format styles
 str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = f'{id_num},{name},{sal}'
+
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)

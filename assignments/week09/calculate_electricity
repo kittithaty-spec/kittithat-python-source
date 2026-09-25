@@ -1,0 +1,32 @@
+def calculate_electricity_cost(units):
+    if units <= 50:
+        cost = units * 2.5
+    elif units <= 100:
+        cost = 50 * 2.5 + (units - 50) *3
+    elif units <= 200:
+        cost = 50 * 2.5 + 50 * 3 + (units - 100) * 3.5
+    else:
+        cost = 50 * 2.5 + 50 * 3 + 100 * 3.5 + (units - 200) * 4
+
+    print(f"ค่าบริการ: 25 บาท")
+    print(f"ค่าไฟ: {cost + 25} บาท")
+
+while True:
+    print("\n==== โปรแกรมคำนวนไฟฟ้า =====")
+    print("1. คำนวณค่าไฟ")
+    print("2. ออกโปรแกรม")
+
+    choice = input("เลือกเมนู: ")
+
+    if choice == "1":
+        units = int(input("จำนวนหน่วนไฟฟ้า: "))
+
+        if units < 0:
+            print("units ห้ามน้อยกว่า 0")
+        else:
+            calculate_electricity_cost(units)
+    elif choice == "2":
+        break
+    else:
+        print("No เลือกใหม่")
+

@@ -1,0 +1,11 @@
+""" Head title Try,except
+
+ Error (bug)(3 type) = 1. syntax error(ไม่เป็นไปตามกฏ langauge) 2.runtime error(ข้อผิดผลาดตอน run) 3.logic error (run ได้แต่ผล run ไม่เป็นไปตามที่หวัง)
+ 
+ ValueError
+ ZeroDivisionError 
+ FliesNotFoundError
+ PermissionError
+ 
+ 
+ """
