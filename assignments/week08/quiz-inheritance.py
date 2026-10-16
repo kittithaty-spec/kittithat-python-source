@@ -6,6 +6,7 @@ Create a class hierarchy:
     Implement a method get_info() in both classes
 
 """
+<<<<<<< HEAD
 class Vehicle():
     def __init__(self, brand, model, year):
         self.brand = brand
@@ -29,3 +30,5 @@ print(vehicle.get_info())
 
 car = car("honda", "city", "2029", "5")
 print(car.get_info())
+=======
+>>>>>>> upstream/main

@@ -7,7 +7,11 @@ return ข้อความต้อนรับในรูปแบบ string
 """
 def welcome_message(name, course):
     # Your Problem 1 solution
+<<<<<<< HEAD
     return f"Welcome {name} to {course} class!"
+=======
+    pass
+>>>>>>> upstream/main
 
 """ เขียน function ชื่อ calculate_circle ที่มีคุณสมบัติดังนี้:
 
@@ -18,6 +22,7 @@ return dictionary ที่มี area และ circumference
 
 def calculate_circle(radius):
     # Your Problem 2 solution
+<<<<<<< HEAD
     pi = 3.14159
     area = round(pi * radius * radius, 2)
     circumference = round(2 * pi * radius, 2)
@@ -25,6 +30,9 @@ def calculate_circle(radius):
         "area": area,
         "circumference": circumference,
     }
+=======
+    pass
+>>>>>>> upstream/main
 
 """ เขียน function ชื่อ create_user_profile ที่มีคุณสมบัติดังนี้:
 
@@ -32,14 +40,18 @@ def calculate_circle(radius):
 return string ที่จัดรูปแบบข้อมูลผู้ใช้
 รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
 
+<<<<<<< HEAD
 อย่าลืมเขียนโปรแกรมในส่วนของการทดลองใช้งานด้วย เอา 3 ลูกค้า
 print(create_user_profile("Boonchoo", 40))
 print(create_user_profile("manee"))
 print(create_user_profile("Piti", 40, true))
+=======
+>>>>>>> upstream/main
 """
 
 def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
+<<<<<<< HEAD
     
     user_type = "standard"
     if premium == True:
@@ -50,6 +62,9 @@ print(create_user_profile("Boonchoo", 40))
 print(create_user_profile("manee"))
 print(create_user_profile("Piti", 40, True))
 
+=======
+    pass
+>>>>>>> upstream/main
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
@@ -64,6 +79,7 @@ passed: จำนวนคะแนนที่ >= 70 """
 
 def analyze_scores(scores):
     # Your Problem 4 solution
+<<<<<<< HEAD
     total = sum(scores)
     average = round(total / len(scores), 1) if scores else 0
     highest = max(scores) if scores else None
@@ -76,6 +92,9 @@ def analyze_scores(scores):
         "lowest": lowest,
         "passed": passed,
     }
+=======
+    pass
+>>>>>>> upstream/main
 
 """ เขียน function ชื่อ count_vowels_consonants ที่มีคุณสมบัติดังนี้:
 
@@ -86,6 +105,7 @@ return dictionary ที่มี vowels และ consonants counts
 
 def count_vowels_consonants(text):
     # Your Problem 5 solution
+<<<<<<< HEAD
     vowels_set = set("aeiou")
     vowels = 0
     consonants = 0
@@ -99,6 +119,9 @@ def count_vowels_consonants(text):
         "vowels": vowels,
         "consonants": consonants,
     }
+=======
+    pass
+>>>>>>> upstream/main
 
 # =============================================================================
 # TEST SECTION - DO NOT MODIFY
